@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Серж Т](https://up.htmlacademy.ru/adaptive/8/user/80354).
-* Наставник: `Неизвестно`.
+* Наставник: `Балабанович Владислав`.
 
 ---
 
