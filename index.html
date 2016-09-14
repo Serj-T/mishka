@@ -13,7 +13,7 @@
       <nav class="main-nav  main-nav--closed">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
+          <ul class="main-nav__list">
             <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
             <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
             <li class="main-nav__item  main-nav__item--search"><a href="#">Поиск по сайту</a></li>
@@ -36,34 +36,36 @@
         </nav>
       </div>
 
-      <section class="item-product item-product--weekly">
-        <h3 class="item-product__title">Вязанные корзинки</h3>
-        <span class="item-product__promo">Товар недели</span>
-        <p class="item-product__info">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-        <table class="item-product__table">
-          <tr>
-            <td>Цвет:</td>
-            <td>&laquo;Тиффани&raquo;/серый</td>
-          </tr>
-          <tr>
-            <td>Диаметр:</td>
-            <td>25 см</td>
-          </tr>
-          <tr>
-            <td>Высота:</td>
-            <td>15 см</td>
-          </tr>
-        </table>
-        <div class="item-product__photo">
-          <img src="http://dummyimage.com/259x315&text=Item" width="259" height="315" alt="Вязанные корзинки">
+      <section class="item-product  item-product--weekly">
+        <div class="item-product__wrapper">
+          <h3 class="item-product__title">Вязанные корзинки</h3>
+          <span class="item-product__promo">Товар недели</span>
+          <p class="item-product__info">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+          <table class="item-product__table">
+            <tr>
+              <td>Цвет:</td>
+              <td>&laquo;Тиффани&raquo;/серый</td>
+            </tr>
+            <tr>
+              <td>Диаметр:</td>
+              <td>25 см</td>
+            </tr>
+            <tr>
+              <td>Высота:</td>
+              <td>15 см</td>
+            </tr>
+          </table>
+          <div class="item-product__photo">
+            <img src="http://dummyimage.com/259x315&text=Item" width="259" height="315" alt="Вязанные корзинки">
+          </div>
+          <span class="item-product__price">Цена: 990 руб.</span>
+          <a class="btn" href="#">Заказать</a>
         </div>
-        <span class="item-product__price">Цена: 990 руб.</span>
-        <a class="btn" href="#">Заказать</a>
       </section>
     </div>
 
     <section class="about-us">
-      <ul class="about-us__wrapper  about__list">
+      <ul class="about-us__list">
         <li class="about__item">Экологически чистые материалы</li>
         <li class="about__item">Скандинавский стиль по российской цене</li>
         <li class="about__item">Увеличивает лайки на фотографиях</li>
@@ -71,20 +73,23 @@
         <li class="about__item">Поддержка отечественного производителя</li>
         <li class="about__item">Поставляется в подарочной упаковке</li>
       </ul>
-      <div class="review  review__wrapper"></div>
-        <span class="review__title">Отзывы</span>
-        <blockquote class="review__text">
-          <p>Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильнее, а также набирают больше лайков!</p>
-          <cite class="review__author-name">Анастасия Красильникова<br>
-          <a class="review-author__social" href="#">@misssssiskras</a></cite>
-        </blockquote>
-        <button class="review__prev">Назад</button>
-        <button class="review__next">Вперед</button>
-        <a class="btn" href="#">Оставить свой</a>
+      <div class="review">
+        <div class="review__wrapper">
+          <span class="review__title">Отзывы</span>
+          <blockquote class="review__text">
+            <p>Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильнее, а также набирают больше лайков!</p>
+            <cite class="review__author-name">Анастасия Красильникова<br>
+            <a class="review-author__social" href="#">@misssssiskras</a></cite>
+          </blockquote>
+          <button class="review__prev">Назад</button>
+          <button class="review__next">Вперед</button>
+          <a class="btn" href="#">Оставить свой</a>
+        </div>
+      </div>
     </section>
 
     <section class="contacts">
-      <table class="contacts__table contacts__wrapper">
+      <table class="contacts__table">
         <tr>
           <td>e-mail:</td>
           <td><a href="contact__email">info@mimimishkashop.ru</a></td>
@@ -117,13 +122,15 @@
     </div>
 
     <footer class="main-footer">
-      <section class="social social__wrapper">
-        <a class="social__btn social__btn--vk" href="#">VK</a>
-        <a class="social__btn social__btn--fb" href="#">FB</a>
-        <a class="social__btn social__btn--ig" href="#">IG</a>
-      </section>
-      <div class="copyright  copyright__wrapper">
-        <a class="copyright__author" href="#">Разработано</a>
+      <div class="main-footer__wrapper">
+        <section class="social">
+          <a class="social__btn social__btn--vk" href="#">VK</a>
+          <a class="social__btn social__btn--fb" href="#">FB</a>
+          <a class="social__btn social__btn--ig" href="#">IG</a>
+        </section>
+        <div class="copyright">
+          <a class="copyright__author" href="#">Разработано</a>
+        </div>
       </div>
     </footer>
   </body>
