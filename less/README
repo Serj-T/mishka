@@ -7,5 +7,25 @@ http://lesscss.org
 Структура файлов:
 
 less/
+| - about-process.less
+| - about-us.less
+| - add-in-cart.less
+| - btn.less
+| - catalog.less
+| - contacts.less
+| - copyright.less
+| - form.less
+| - item-product.less
+| - main-footer.less
+| - main-nav.less
+| - map.less
+| - mixins.less
+| - page-header.less
+| - page-title.less
+| - product-card.less
+| - promo.less
+| - review.less
+| - social.less
 | - style.less
-| - [другие *.less файлы]
+
+README

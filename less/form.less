@@ -1,0 +1,96 @@
+.form {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.form fieldset {
+  padding: 0;
+  padding-top: 20px;
+  margin: 0;
+  margin-bottom: 20px;
+  border: none;
+  border-top: 1px solid #62d1ba;
+}
+
+.form__title {
+  width: 62px;
+  font-style: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #63d1bb;
+}
+
+.form__warning {
+  font-size: 13.5px; /* чуть меньше макета */
+  line-height: 14px;
+  font-weight: 400;
+  color: @body-color;
+}
+
+.form {
+  input[type="radio"],
+  input[type="checkbox"] {
+    display: none;
+  }
+}
+
+.form {
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    width: 100%;
+  }
+}
+
+.form label {
+  display: block;
+  padding: 20px 0;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.form__name label,
+.form__contact label {
+  padding: 15px 0;
+}
+
+fieldset:last-of-type {
+  margin-bottom: 0;
+}
+
+.form {
+  &__radio,
+  &__checkbox {
+    position: relative;
+    padding-left: 62px;
+  }
+}
+
+.form__radio label {
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 36px;
+    height: 36px;
+    border: 2px solid #000000;
+    border-radius: 50%;
+  }
+}
+
+.form__checkbox label {
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 36px;
+    height: 36px;
+    border: 2px solid #000000;
+  }
+}
