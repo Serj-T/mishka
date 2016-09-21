@@ -1,60 +1,25 @@
-@import "about-process.less";
-@import "about-us.less";
-@import "add-in-cart.less";
-@import "btn.less";
-@import "catalog.less";
-@import "contacts.less";
-@import "copyright.less";
-@import "form.less";
-@import "item-product.less";
-@import "main-footer.less";
-@import "main-nav.less";
-@import "map.less";
-@import "mixins.less";
-@import "page-header.less";
-@import "page-title.less";
-@import "product-card.less";
-@import "promo.less";
-@import "review.less";
-@import "social.less";
-@import "variables.less";
+@import "abstracts/mixins.less";
+@import "abstracts/variables.less";
 
-body {
-  width: 320px; /* временно */
-  font-size: 15px;
-  line-height: 24px;
-  font-family: "Open Sans", "Arial", sans-serif;
-  color: @body-color;
-  font-style: normal;
-  background-color: @bg-white;
-}
+@import "base/fonts.less";
+@import "base/global.less";
 
-h1 {
-  font-size: 27px;
-  line-height: 30px;
-  .h-font-set();
-}
+@import "components/about-process.less";
+@import "components/about-us.less";
+@import "components/add-in-cart.less";
+@import "components/btn.less";
+@import "components/contacts.less";
+@import "components/copyright.less";
+@import "components/map.less";
+@import "components/page-title.less";
+@import "components/promo.less";
+@import "components/review.less";
+@import "components/social.less";
 
-h2 {
-  font-size: 17px;
-  line-height: 24px;
-  .h-font-set();
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Open Sans'), local('OpenSans'),
-       url('../fonts/opensans.woff2') format('woff2'),
-       url('../fonts/opensans.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Open Sans Bold'), local('OpenSansBold'),
-       url('../fonts/opensansbold.woff2') format('woff2'),
-       url('../fonts/opensansbold.woff') format('woff');
-}
+@import "layout/catalog.less";
+@import "layout/form.less";
+@import "layout/item-product.less";
+@import "layout/main-footer.less";
+@import "layout/main-nav.less";
+@import "layout/page-header.less";
+@import "layout/product-card.less";
