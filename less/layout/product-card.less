@@ -4,6 +4,11 @@
   margin-bottom: 30px;
 }
 
+.product-card__text {
+  width: 200px;
+  padding: 28px;
+}
+
 .product-card__title {
   font-size: 17px;
   line-height: 24px;
@@ -19,7 +24,41 @@
   &__title,
   &__price {
     display: block;
-    margin-left: 28px;
-    margin-right: 28px;
+    /* margin-left: 28px;
+    margin-right: 28px;*/
   }
+}
+
+@media @tablet-widths {
+
+  .product-card {
+    min-height: 195px;
+  }
+
+  .product-card__image {
+    float: left;
+    .clearfix();
+  }
+
+  .product-card__text {
+    float: left;
+    .clearfix();
+  }
+
+}
+
+@media @desktop-widths {
+
+  .product-card {
+    display: inline-block;
+    vertical-align: top;
+    min-height: 450px;
+    margin-right: 50px;
+  }
+
+  .product-card__image,
+  .product-card__text {
+    float: none;
+  }
+
 }

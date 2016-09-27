@@ -1,19 +1,24 @@
+.promo {
+  margin-bottom: 30px;
+  .clearfix();
+}
+
 .promo__wrapper {
   text-align: center;
   padding-right: 30px;
   padding-left: 30px;
   padding-top: 60px;
+  .clearfix();
 }
 
 .promo__wrapper--image {
-  background: @bg-white url("../img/hero-mobile@1x.jpg") no-repeat 50% 50%;
+  background: @bg-white url("../img/hero-mobile@1x.jpg") no-repeat 50%;
   min-height: 283px;
+  border-top: 1px solid #e7e7e7;
 }
 
 .groups__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  .list-reset()
 }
 
 .group__item a {
@@ -26,7 +31,7 @@
   .h-font-set();
   color: white; /* переопределение цвета */
   text-decoration: none;
-  background-color: #63d1bb;
+  background-color: @surf-green;
 }
 
 .group__item--dark a {
@@ -34,5 +39,23 @@
 }
 
 .promo__title {
-  margin: 0;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.group__nav {
+  .container();
+}
+
+@media @tablet-widths {
+
+  .group__item {
+    display: block;
+    float: left;
+    width: 50%;
+    .clearfix();
+    margin-bottom: 30px;
+  }
+
 }

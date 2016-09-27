@@ -1,6 +1,6 @@
 .form {
-  padding-left: 30px;
-  padding-right: 30px;
+  .container();
+  .clearfix();
 }
 
 .form fieldset {
@@ -18,7 +18,7 @@
   line-height: 16px;
   font-weight: 700;
   text-transform: uppercase;
-  color: #63d1bb;
+  color: @surf-green;
 }
 
 .form__warning {
@@ -50,7 +50,7 @@
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
-  color: #000000;
+  color: @h-color;
 }
 
 .form__name label,
@@ -93,4 +93,49 @@ fieldset:last-of-type {
     height: 36px;
     border: 2px solid #000000;
   }
+}
+
+
+@media @tablet-widths {
+
+  .form__radio,
+  .form__checkbox,
+  .form__name,
+  .form__contact,
+  .comment-field {
+    margin-left: 150px;
+  }
+
+  .form fieldset {
+    border: none;
+  }
+
+  .form legend {
+    position: relative;
+    top: 40px;
+  }
+
+  .form .btn {
+    float: left;
+    width: 230px;
+    margin-bottom: 30px;
+  }
+
+  .form__warning {
+    float: right;
+    margin-top: 26px;
+  }
+
+}
+
+@media @desktop-widths {
+
+  .form p {
+    margin-left: 150px;
+  }
+
+  .form .btn {
+    margin-left: 150px;
+  }
+
 }
