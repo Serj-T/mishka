@@ -1,21 +1,17 @@
 .about-us {
-  margin-top: 35px;
-  padding-right: 30px;
-  padding-left: 30px;
+  .container();
+  padding-top: 20px;
 }
 
 .about-us__title {
-  margin-bottom: 30px;
   font-size: 25px;
   line-height: 30px;
   .h-font-set();
 }
 
 .about-us__list {
-  margin: 0;
-  padding: 0;
+  .list-reset();
   margin-bottom: 50px;
-  list-style: none;
 }
 
 .about__item {
@@ -24,4 +20,29 @@
   font-size: 17px;
   line-height: 30px;
   .h-font-set();
+}
+
+@media @tablet-widths {
+
+  .about__item {
+    display: inline-block;
+    vertical-align: top;
+    width: 265px;
+  }
+
+}
+
+@media @desktop-widths {
+
+  .about-us__title {
+    display: block;
+    width: 700px;
+    margin: 0 auto;
+  }
+
+  .about-us__list {
+    width: 700px;
+    margin: 0 auto;
+  }
+
 }

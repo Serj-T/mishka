@@ -1,9 +1,40 @@
 .main-footer {
   margin-top: 40px;
   background: #f1f1f1;
+  .clearfix();
 }
 
 .main-footer__wrapper {
-  padding-right: 30px;
-  padding-left: 30px;
+  .container();
+}
+
+.footer__logo {
+  display: none;
+}
+
+@media @tablet-widths {
+
+  .footer__logo {
+    display: block;
+    float: left;
+    margin-right: 150px;
+  }
+
+  .social {
+    float: left;
+    text-align: center;
+  }
+
+  .copyright {
+    float: right;
+  }
+
+}
+
+@media @desktop-widths {
+
+    .footer__logo {
+    margin-right: 350px;
+  }
+
 }

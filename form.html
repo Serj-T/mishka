@@ -3,22 +3,27 @@
   <head>
     <meta charset="utf-8">
     <title>Форма Мишка</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
     <header class="page-header">
-      <div class="page-header__logo">
-        <a href="index.html"><img src="http://dummyimage.com/86x35&text=Logo" width="86" height="35" alt="Интернет-магазин «Мишка»"></a>
-      </div>
-      <nav class="main-nav  main-nav--closed">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
-            <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
-            <li class="main-nav__item  main-nav__item--search"><a href="#">Поиск по сайту</a></li>
-            <li class="main-nav__item  main-nav__item--cart"><a href="#">Корзина: пока пуста</a></li>
-          </ul>
+      <div class="page-header__wrapper">
+        <div class="page-header__logo">
+          <a href=""><img src="img/logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Мишка»"></a>
+        </div>
+        <nav class="main-nav  main-nav--closed">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list main-nav__list--first">
+              <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
+              <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
+            </ul>
+            <ul class="main-nav__list main-nav__list--second">
+              <li class="main-nav__item  main-nav__item--search"><a href="#">Поиск по сайту</a></li>
+              <li class="main-nav__item  main-nav__item--cart"><a href="#">Корзина: пока пуста</a></li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
@@ -71,15 +76,15 @@
           <fieldset>
             <legend class="form__title">Фио</legend>
             <div class="form__name">
-              <label for="name">Имя</label>
+              <label for="name">Имя:</label>
               <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
             </div>
             <div class="form__name">
-              <label for="last-name">Фамилия</label>
+              <label for="last-name">Фамилия:</label>
               <input type="text" id="last-name" name="last_name" placeholder="Укажите фамилию" required>
             </div>
             <div class="form__name">
-              <label for="name-father">Отчество</label>
+              <label for="name-father">Отчество:</label>
               <input type="text" id="name-father" name="name-father" placeholder="Отчество, если желаете">
             </div>
           </fieldset>
@@ -99,7 +104,9 @@
           </fieldset>
           <fieldset>
             <legend class="form__title">Доп</legend>
-            <textarea name="comment-field" id="comment-field" rows="8" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            <div class="comment-field">
+              <textarea name="comment-field" id="comment-field" rows="8" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            </div>
           </fieldset>
           <span class="form__warning">Все поля обязательны для заполнения</span>
           <input class="btn" type="submit" value="Отправить заказ">
@@ -109,6 +116,9 @@
 
     <footer class="main-footer">
       <div class="main-footer__wrapper">
+        <div class="footer__logo">
+          <img src="img/logo-mobile.svg" alt="">
+        </div>
         <section class="social">
           <a class="social__btn social__btn--vk" href="#">VK</a>
           <a class="social__btn social__btn--fb" href="#">FB</a>

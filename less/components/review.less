@@ -1,8 +1,11 @@
 .review {
-  padding-bottom: 50px;
+  .container();
+  margin-bottom: 40px;
 }
 
 .review__title {
+  display: block;
+  width: 100%;
   margin-bottom: 30px;
   font-size: 25px;
   line-height: 30px;
@@ -30,7 +33,7 @@ cite {
   font-size: 18px;
   line-height: 30px;
   font-weight: 400;
-  color: #444444;
+  color: @body-color;
   text-decoration: none;
 }
 
@@ -40,4 +43,41 @@ cite {
 
 .review__next {
   width: 50%;
+}
+
+@media @tablet-widths {
+
+  .review {
+    position: relative;
+  }
+
+  .review .btn {
+    position: absolute;
+    margin: 0;
+    width: 175px;
+    top: 0;
+    right: 0;
+  }
+
+  .review__prev {
+    position: absolute;
+    width: 70px;
+    bottom: 0;
+    right: 70px;
+  }
+
+  .review__next {
+    position: absolute;
+    width: 70px;
+    bottom: 0;
+    right: 0;
+  }
+
+}
+@media @desktop-widths {
+
+  .review__wrapper {
+    padding-left: 130px;
+  }
+
 }
