@@ -1,3 +1,35 @@
 .copyright {
-  min-height: 80px;
+  display: flex;
+  justify-content: center;
+  padding-right: 39px;
+  padding-left: 38px;
+  height: 79px;
+}
+
+.copyright__author {
+  position: relative;
+  display: block;
+  margin-top: 20px;
+  width: 100%;
+  font-size: 19px;
+  line-height: 30px;
+  .h-font-set();
+  text-decoration: none;
+
+  &:active {
+    opacity: .3;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 2px;
+    right: 0;
+    width: 27px;
+    height: 35px;
+    background: url("../img/logo-htmlacademy.svg") no-repeat;
+  }
+
+
 }
