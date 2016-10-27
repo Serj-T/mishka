@@ -6,18 +6,19 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-  <!-- Hello world-->
     <header class="page-header">
       <div class="page-header__wrapper">
         <div class="page-header__logo">
-          <a href=""><img src="img/logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Мишка»"></a>
+          <a href="index.html"><img src="img/logo-mobile.svg" width="86" height="35" alt="Интернет-магазин «Мишка»"></a>
         </div>
         <nav class="main-nav  main-nav--closed  main-nav--nojs">
           <button class="main-nav__toggle" type="button">Открыть меню</button>
           <div class="main-nav__wrapper">
-            <ul class="main-nav__list main-nav__list--first">
+            <ul class="main-nav__list  main-nav__list--first">
               <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
               <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
+              <li class="main-nav__item  main-nav__item--option"><a href="form.html">Новые поступления</a></li>
+              <li class="main-nav__item  main-nav__item--option"><a href="form.html">Распродажа</a></li>
             </ul>
             <ul class="main-nav__list  main-nav__list--second">
               <li class="main-nav__item  main-nav__item--search"><a href="#">Поиск по сайту</a></li>
@@ -25,6 +26,7 @@
             </ul>
           </div>
         </nav>
+        <div class="page-header__promo-text">Бесплатная доставка по России</div>
       </div>
     </header>
 
@@ -46,84 +48,96 @@
 </script>
 
     <div class="promo">
-      <div class="promo__wrapper  promo__wrapper--image">
-        <h1 class="promo__title">Милые штуки ручной<br> работы для дома</h1>
+      <div class="promo__wrapper">
+        <div class="promo__image">
+          <h1 class="promo__title">Милые штуки ручной<br> работы для дома</h1>
+        </div>
       </div>
       <div class="promo__groups">
         <nav class="group__nav">
           <ul class="groups__list">
-            <li class="group__item"><a href="#">Предметы интерьера</a></li>
-            <li class="group__item  group__item--dark"><a href="#">Детские игрушки</a></li>
+            <li class="group__item  group__item--inter"><a href="#">Предметы интерьера</a></li>
+            <li class="group__item  group__item--toy"><a href="#">Детские игрушки</a></li>
+            <li class="group__item  group__item--toy"><a href="#">Детские игрушки</a></li>
+            <li class="group__item  group__item--toy"><a href="#">Детские игрушки</a></li>
+            <li class="group__item  group__item--toy"><a href="#">Детские игрушки</a></li>
           </ul>
         </nav>
       </div>
     </div>
 
-    <section class="item-product  item-product--weekly">
+    <section class="item-product">
       <div class="item-product__wrapper">
         <h2 class="item-product__title">Вязаные корзинки</h2>
-        <p class="item-product__info">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-        <table class="item-product__table">
-          <tr>
-            <td>Цвет:</td>
-            <td>&laquo;Тиффани&raquo;/серый</td>
-          </tr>
-          <tr>
-            <td>Диаметр:</td>
-            <td>25 см</td>
-          </tr>
-          <tr>
-            <td>Высота:</td>
-            <td>15 см</td>
-          </tr>
-        </table>
         <div class="item-product__photo">
           <img src="img/triple-set-mobile@1x.jpg" width="259" height="315" alt="Вязанные корзинки">
         </div>
-        <span class="item-product__price">Цена: 990 руб.</span>
-        <a class="btn" href="#">Заказать</a>
+        <div class="item-product__text">
+          <p class="item-product__info">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+          <table class="item-product__table">
+            <tr>
+              <td>Цвет:</td>
+              <td>&laquo;Тиффани&raquo;/серый</td>
+            </tr>
+            <tr>
+              <td>Диаметр:</td>
+              <td>25 см</td>
+            </tr>
+            <tr>
+              <td>Высота:</td>
+              <td>15 см</td>
+            </tr>
+          </table>
+        </div>
+        <div class="item-product__action">
+          <span class="item-product__price">Цена: 990 руб.</span>
+          <a class="btn" href="#">Заказать</a>
+        </div>
       </div>
     </section>
 
     <section class="about-us">
-      <span class="about-us__title">Коротко о нас</span>
-      <ul class="about-us__list">
-        <li class="about__item">Экологически чистые материалы</li>
-        <li class="about__item">Скандинавский стиль по российской цене</li>
-        <li class="about__item">Увеличивает лайки на фотографиях</li>
-        <li class="about__item">Связано вручную с любовью и умилением</li>
-        <li class="about__item">Поддержка отечественного производителя</li>
-        <li class="about__item">Поставляется в подарочной упаковке</li>
-      </ul>
+      <div class="about-us__wrapper">
+        <h2 class="about-us__title">Коротко о нас:</h2>
+        <ul class="about-us__list">
+          <li class="about__item  about__item--1">Экологически<br> чистые материалы</li>
+          <li class="about__item  about__item--2">Скандинавский стиль<br> по российской цене</li>
+          <li class="about__item  about__item--3">Увеличивает лайки<br> на фотографиях</li>
+          <li class="about__item  about__item--4">Связано вручную с<br> любовью и умилением</li>
+          <li class="about__item  about__item--5">Поддержка отечественного<br> производителя</li>
+          <li class="about__item  about__item--6">Поставляется в<br> подарочной упаковке</li>
+        </ul>
+      </div>
     </section>
+
     <div class="review">
       <div class="review__wrapper">
-        <span class="review__title">Отзывы</span>
-        <blockquote class="review__text">
-          <p>Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильнее, а также набирают больше лайков!</p>
-          <cite class="review__author-name">Анастасия Красильникова<br>
-          <a class="review-author__social" href="#">@misssssiskras</a></cite>
-          </blockquote>
-          <button class="review__prev">Назад</button><button class="review__next">Вперед</button>
+        <h2 class="review__title">Отзывы</h2>
+          <p class="review__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильнее, а также набирают больше лайков!</p>
+          <span class="review__author">
+            <span class="review__author-name">Анастасия Красильникова</span></br>
+            <a class="review-author__social" href="#">@misssssiskras</a>
+          </span>
+          <div class="review__btns">
+            <button class="review__btn  review__btn--prev">Назад</button><button class="review__btn  review__btn--next">Вперед</button>
+          </div>
           <a class="btn" href="#">Написать</a>
       </div>
     </div>
 
-
     <section class="contacts">
       <div class="contacts__wrapper">
         <span class="contacts__title">Контакты</span>
-
           <ul class="email__contact">
             <li class="contact__item">e-mail:</li>
-            <li class="contact__item"><a class="contact__email" href="#">info@mimimishkashop.ru</a></li>
+            <li class="contact__item"><a class="contact__item--email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></li>
           </ul>
           <ul class="tel__contact">
             <li class="contact__item">адрес:</li>
             <li class="contact__item">
-              г. Санкт-Петербург,<br>
-              ул. Большая<br>
-              Конюшенная,<br>
+              г. Санкт-Петербург,
+              ул. Большая
+              Конюшенная,
               д. 19/8, офис 101</li>
           </ul>
           <div class="map"></div>
@@ -153,9 +167,9 @@
           <img src="img/logo-mobile.svg" alt="">
         </div>
         <section class="social">
-          <a class="social__btn social__btn--vk" href="#">VK</a>
-          <a class="social__btn social__btn--fb" href="#">FB</a>
           <a class="social__btn social__btn--ig" href="#">IG</a>
+          <a class="social__btn social__btn--fb" href="#">FB</a>
+          <a class="social__btn social__btn--tw" href="#">IG</a>
         </section>
         <div class="copyright">
           <a class="copyright__author" href="#">Разработано</a>
